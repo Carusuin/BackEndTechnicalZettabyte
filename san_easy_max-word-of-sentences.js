@@ -13,11 +13,11 @@ const sentences = [
 
 
 function result(sentences) {
-  let x = 0;
+  let x = 0; // max variable
   for ( let i = 0 ; i < sentences.length ; i++ ){
-    const divide = sentences[i].split(" ");
-    count = divide.length
-    if ( count > x){
+    const divide = sentences[i].split(" "); //dividing the words
+    const count = divide.length // counting words per index
+    if ( count > x){ // find the max
       x = count ;
     }
   }
